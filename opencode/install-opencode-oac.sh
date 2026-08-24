@@ -169,9 +169,8 @@ models = {
     base / "subagents/development/devops-specialist.md":
         "opencode-go/deepseek-v4-pro",
 
-    # Kimi K2.7 Code foi escolhido somente para o especialista frontend.
     base / "subagents/development/frontend-specialist.md":
-        "opencode-go/kimi-k2.7-code",
+        "opencode-go/deepseek-v4-flash",
 
     base / "subagents/system-builder/context-organizer.md":
         "opencode-go/deepseek-v4-flash",
@@ -256,7 +255,6 @@ validate_model_ids() {
     "opencode-go/deepseek-v4-flash"
     "opencode-go/deepseek-v4-pro"
     "opencode-go/glm-5.3"
-    "opencode-go/kimi-k2.7-code"
   )
 
   local models_output
@@ -339,7 +337,7 @@ ExternalScout          -> opencode-go/deepseek-v4-flash
 TaskManager            -> opencode-go/deepseek-v4-flash
 
 OpenDevopsSpecialist   -> opencode-go/deepseek-v4-pro
-OpenFrontendSpecialist -> opencode-go/kimi-k2.7-code
+OpenFrontendSpecialist -> opencode-go/deepseek-v4-flash
 
 ContextOrganizer       -> opencode-go/deepseek-v4-flash
 
