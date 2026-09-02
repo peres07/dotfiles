@@ -158,7 +158,7 @@ models = {
         "opencode-go/deepseek-v4-flash",
 
     base / "subagents/core/documentation.md":
-        "opencode-go/glm-5.3",
+        "openai/gpt-5.6-sol",
 
     base / "subagents/core/externalscout.md":
         "opencode-go/deepseek-v4-flash",
