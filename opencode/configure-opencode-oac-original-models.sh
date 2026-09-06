@@ -45,7 +45,7 @@ models = {
     base / "subagents/code/reviewer.md": "opencode-go/deepseek-v4-pro",
     base / "subagents/code/test-engineer.md": "opencode-go/deepseek-v4-flash",
     base / "subagents/core/contextscout.md": "opencode-go/deepseek-v4-flash",
-    base / "subagents/core/documentation.md": "opencode-go/glm-5.3",
+    base / "subagents/core/documentation.md": "openai/gpt-5.6-sol",
     base / "subagents/core/externalscout.md": "opencode-go/deepseek-v4-flash",
     base / "subagents/core/task-manager.md": "opencode-go/deepseek-v4-flash",
     base / "subagents/development/devops-specialist.md": "opencode-go/deepseek-v4-pro",
@@ -105,7 +105,6 @@ validate_model_ids() {
     "openai/gpt-5.6-sol"
     "opencode-go/deepseek-v4-flash"
     "opencode-go/deepseek-v4-pro"
-    "opencode-go/glm-5.3"
   )
   local models_output
 
