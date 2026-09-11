@@ -40,17 +40,17 @@ base = Path.home() / ".config/opencode/agent"
 models = {
     base / "core/openagent.md": "openai/gpt-5.6-sol",
     base / "core/opencoder.md": "openai/gpt-5.6-sol",
-    base / "subagents/code/build-agent.md": "opencode-go/deepseek-v4-flash",
-    base / "subagents/code/coder-agent.md": "opencode-go/deepseek-v4-flash",
-    base / "subagents/code/reviewer.md": "opencode-go/deepseek-v4-pro",
-    base / "subagents/code/test-engineer.md": "opencode-go/deepseek-v4-flash",
-    base / "subagents/core/contextscout.md": "opencode-go/deepseek-v4-flash",
+    base / "subagents/code/build-agent.md": "opencode-go/deepseek-v4.1-flash",
+    base / "subagents/code/coder-agent.md": "opencode-go/deepseek-v4.1-flash",
+    base / "subagents/code/reviewer.md": "opencode-go/deepseek-v4.1-flash",
+    base / "subagents/code/test-engineer.md": "opencode-go/deepseek-v4.1-flash",
+    base / "subagents/core/contextscout.md": "opencode-go/deepseek-v4.1-flash",
     base / "subagents/core/documentation.md": "openai/gpt-5.6-sol",
-    base / "subagents/core/externalscout.md": "opencode-go/deepseek-v4-flash",
-    base / "subagents/core/task-manager.md": "opencode-go/deepseek-v4-flash",
-    base / "subagents/development/devops-specialist.md": "opencode-go/deepseek-v4-pro",
-    base / "subagents/development/frontend-specialist.md": "opencode-go/deepseek-v4-flash",
-    base / "subagents/system-builder/context-organizer.md": "opencode-go/deepseek-v4-flash",
+    base / "subagents/core/externalscout.md": "opencode-go/deepseek-v4.1-flash",
+    base / "subagents/core/task-manager.md": "opencode-go/deepseek-v4.1-flash",
+    base / "subagents/development/devops-specialist.md": "opencode-go/deepseek-v4.1-flash",
+    base / "subagents/development/frontend-specialist.md": "opencode-go/deepseek-v4.1-flash",
+    base / "subagents/system-builder/context-organizer.md": "opencode-go/deepseek-v4.1-flash",
 }
 
 def set_model(path: Path, model: str) -> None:
@@ -103,8 +103,7 @@ validate_model_ids() {
 
   local required_models=(
     "openai/gpt-5.6-sol"
-    "opencode-go/deepseek-v4-flash"
-    "opencode-go/deepseek-v4-pro"
+    "opencode-go/deepseek-v4.1-flash"
   )
   local models_output
 

@@ -22,17 +22,17 @@ Durante a execução, o instalador:
 | --- | --- |
 | OpenAgent | `openai/gpt-5.6-sol` |
 | OpenCoder | `openai/gpt-5.6-sol` |
-| BuildAgent | `opencode-go/deepseek-v4-flash` |
-| CoderAgent | `opencode-go/deepseek-v4-flash` |
-| CodeReviewer | `opencode-go/deepseek-v4-pro` |
-| TestEngineer | `opencode-go/deepseek-v4-flash` |
-| ContextScout | `opencode-go/deepseek-v4-flash` |
+| BuildAgent | `opencode-go/deepseek-v4.1-flash` |
+| CoderAgent | `opencode-go/deepseek-v4.1-flash` |
+| CodeReviewer | `opencode-go/deepseek-v4.1-flash` |
+| TestEngineer | `opencode-go/deepseek-v4.1-flash` |
+| ContextScout | `opencode-go/deepseek-v4.1-flash` |
 | DocWriter | `opencode-go/glm-5.3` |
-| ExternalScout | `opencode-go/deepseek-v4-flash` |
-| TaskManager | `opencode-go/deepseek-v4-flash` |
-| OpenDevopsSpecialist | `opencode-go/deepseek-v4-pro` |
-| OpenFrontendSpecialist | `opencode-go/deepseek-v4-flash` |
-| ContextOrganizer | `opencode-go/deepseek-v4-flash` |
+| ExternalScout | `opencode-go/deepseek-v4.1-flash` |
+| TaskManager | `opencode-go/deepseek-v4.1-flash` |
+| OpenDevopsSpecialist | `opencode-go/deepseek-v4.1-flash` |
+| OpenFrontendSpecialist | `opencode-go/deepseek-v4.1-flash` |
+| ContextOrganizer | `opencode-go/deepseek-v4.1-flash` |
 
 O script altera o campo `model:` do frontmatter de cada agente. Se uma versão futura do OpenAgentsControl mudar seus arquivos ou adicionar agentes, os arquivos não encontrados e os agentes sem modelo serão apresentados como avisos.
 

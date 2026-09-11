@@ -143,37 +143,37 @@ models = {
         "openai/gpt-5.6-sol",
 
     base / "subagents/code/build-agent.md":
-        "opencode-go/deepseek-v4-flash",
+        "opencode-go/deepseek-v4.1-flash",
 
     base / "subagents/code/coder-agent.md":
-        "opencode-go/deepseek-v4-flash",
+        "opencode-go/deepseek-v4.1-flash",
 
     base / "subagents/code/reviewer.md":
-        "opencode-go/deepseek-v4-pro",
+        "opencode-go/deepseek-v4.1-flash",
 
     base / "subagents/code/test-engineer.md":
-        "opencode-go/deepseek-v4-flash",
+        "opencode-go/deepseek-v4.1-flash",
 
     base / "subagents/core/contextscout.md":
-        "opencode-go/deepseek-v4-flash",
+        "opencode-go/deepseek-v4.1-flash",
 
     base / "subagents/core/documentation.md":
         "openai/gpt-5.6-sol",
 
     base / "subagents/core/externalscout.md":
-        "opencode-go/deepseek-v4-flash",
+        "opencode-go/deepseek-v4.1-flash",
 
     base / "subagents/core/task-manager.md":
-        "opencode-go/deepseek-v4-flash",
+        "opencode-go/deepseek-v4.1-flash",
 
     base / "subagents/development/devops-specialist.md":
-        "opencode-go/deepseek-v4-pro",
+        "opencode-go/deepseek-v4.1-flash",
 
     base / "subagents/development/frontend-specialist.md":
-        "opencode-go/deepseek-v4-flash",
+        "opencode-go/deepseek-v4.1-flash",
 
     base / "subagents/system-builder/context-organizer.md":
-        "opencode-go/deepseek-v4-flash",
+        "opencode-go/deepseek-v4.1-flash",
 }
 
 def set_model(path: Path, model: str) -> None:
@@ -252,8 +252,7 @@ validate_model_ids() {
 
   local required_models=(
     "openai/gpt-5.6-sol"
-    "opencode-go/deepseek-v4-flash"
-    "opencode-go/deepseek-v4-pro"
+    "opencode-go/deepseek-v4.1-flash"
     "opencode-go/glm-5.3"
   )
 
@@ -326,20 +325,20 @@ MODELOS CONFIGURADOS
 OpenAgent              -> openai/gpt-5.6-sol
 OpenCoder              -> openai/gpt-5.6-sol
 
-BuildAgent             -> opencode-go/deepseek-v4-flash
-CoderAgent             -> opencode-go/deepseek-v4-flash
-CodeReviewer           -> opencode-go/deepseek-v4-pro
-TestEngineer           -> opencode-go/deepseek-v4-flash
+BuildAgent             -> opencode-go/deepseek-v4.1-flash
+CoderAgent             -> opencode-go/deepseek-v4.1-flash
+CodeReviewer           -> opencode-go/deepseek-v4.1-flash
+TestEngineer           -> opencode-go/deepseek-v4.1-flash
 
-ContextScout           -> opencode-go/deepseek-v4-flash
+ContextScout           -> opencode-go/deepseek-v4.1-flash
 DocWriter              -> opencode-go/glm-5.3
-ExternalScout          -> opencode-go/deepseek-v4-flash
-TaskManager            -> opencode-go/deepseek-v4-flash
+ExternalScout          -> opencode-go/deepseek-v4.1-flash
+TaskManager            -> opencode-go/deepseek-v4.1-flash
 
-OpenDevopsSpecialist   -> opencode-go/deepseek-v4-pro
-OpenFrontendSpecialist -> opencode-go/deepseek-v4-flash
+OpenDevopsSpecialist   -> opencode-go/deepseek-v4.1-flash
+OpenFrontendSpecialist -> opencode-go/deepseek-v4.1-flash
 
-ContextOrganizer       -> opencode-go/deepseek-v4-flash
+ContextOrganizer       -> opencode-go/deepseek-v4.1-flash
 
 ===============================================================================
 EOF
