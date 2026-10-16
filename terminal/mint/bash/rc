@@ -1,0 +1,44 @@
+# Based on the active Omakub Bash defaults, without an Omakub dependency.
+shopt -s histappend
+HISTCONTROL=ignoreboth
+HISTSIZE=32768
+HISTFILESIZE=$HISTSIZE
+
+if [[ -f /usr/share/bash-completion/bash_completion ]]; then
+  source /usr/share/bash-completion/bash_completion
+fi
+
+export PATH="$HOME/.local/bin:$PATH"
+
+alias ls='eza -lh --group-directories-first --icons=auto'
+alias lsa='ls -a'
+alias lt='eza --tree --level=2 --long --icons --git'
+alias lta='lt -a'
+alias ff="fzf --preview 'batcat --style=numbers --color=always {}'"
+alias fd='fdfind'
+alias cd='z'
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias bat='batcat'
+alias g='git'
+alias gcm='git commit -m'
+alias gcam='git commit -a -m'
+alias gcad='git commit -a --amend'
+
+compress() { tar -czf "${1%/}.tar.gz" "${1%/}"; }
+alias decompress='tar -xzf'
+
+# Window/pane title and single Nerd Font arrow, as on the original machine.
+PS1="\[\e]0;\w\a\]"$'\uf0a9 '
+
+if command -v mise >/dev/null 2>&1; then
+  eval "$(mise activate bash)"
+fi
+if command -v zoxide >/dev/null 2>&1; then
+  eval "$(zoxide init bash)"
+fi
+if command -v fzf >/dev/null 2>&1; then
+  [[ ! -f /usr/share/bash-completion/completions/fzf ]] || source /usr/share/bash-completion/completions/fzf
+  [[ ! -f /usr/share/doc/fzf/examples/key-bindings.bash ]] || source /usr/share/doc/fzf/examples/key-bindings.bash
+fi

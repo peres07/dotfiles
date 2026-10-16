@@ -25,3 +25,6 @@ O script [`terminal/configure-omakub-terminal.sh`](terminal/configure-omakub-ter
 ```
 
 O script pode ser executado novamente sem duplicar configurações. Antes da primeira alteração, ele cria arquivos de backup com o sufixo `.dotfiles-backup`.
+
+Para instalar o terminal completo deste Ubuntu em um notebook com Linux Mint
+Cinnamon, consulte o [instalador do terminal](terminal/README.md).

@@ -1,0 +1,2 @@
+# Alacritty 0.13 (Linux Mint 22 / Ubuntu 24.04).
+import = ["~/.config/alacritty/theme.toml", "~/.config/alacritty/font.toml", "~/.config/alacritty/font-size.toml", "~/.config/alacritty/shared-legacy.toml"]
